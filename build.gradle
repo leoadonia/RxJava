@@ -1,8 +1,8 @@
 buildscript {
-  repositories { 
-    jcenter()
-    mavenCentral()
-    maven {
+  repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+	maven {
         url "https://plugins.gradle.org/m2/"
     }
   }
@@ -59,7 +59,8 @@ def testNgVersion = "6.11"
 // --------------------------------------
 
 repositories {
-  mavenCentral()
+  maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+  maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 }
 
 dependencies {
